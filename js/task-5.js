@@ -71,6 +71,9 @@ class Car {
     if (value <= this.maxSpeed) {
       this.speed += value;
     }
+    if (this.speed > this.maxSpeed) {
+      this.speed = this.maxSpeed;
+    }
   }
 
   /*
